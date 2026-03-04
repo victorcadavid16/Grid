@@ -1,0 +1,51 @@
+/* SECCIÓN TESTIMONIO */
+.testimonio {
+    padding: 60px 40px;
+    background-color: #222;
+    color: white;
+}
+
+/* GRID CON ÁREAS */
+.contenedor-testimonio {
+    display: grid;
+    grid-template-areas: 
+        "imagen texto";
+        
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+
+    /* alineación */
+    align-items: center;   /* vertical */
+    justify-items: center; /* horizontal */
+}
+
+/* Áreas */
+.imagen {
+    grid-area: imagen;
+}
+
+.texto {
+    grid-area: texto;
+    max-width: 500px;
+}
+
+/* Imagen */
+.imagen img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Texto */
+.texto h2 {
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+
+.texto p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.texto h4 {
+    color: #00c3ff;
+}

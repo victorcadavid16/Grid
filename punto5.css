@@ -1,0 +1,65 @@
+/* SECCIÓN CONTACTO */
+.contacto {
+    padding: 60px 40px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.contacto h2 {
+    margin-bottom: 30px;
+    font-size: 32px;
+}
+
+/* FORMULARIO CON GRID */
+.formulario {
+    display: grid;
+
+    /* COLUMNAS */
+    grid-template-columns: 1fr 1fr;
+
+    /* FILAS */
+    grid-template-rows: auto auto auto auto;
+
+    gap: 15px;
+    max-width: 700px;
+    margin: auto;
+}
+
+/* Inputs ocupan todo el ancho */
+.formulario input,
+.formulario textarea {
+    grid-column: span 2;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Área de mensaje más grande */
+.formulario textarea {
+    height: 120px;
+    resize: none;
+}
+
+/* Botón */
+.formulario button {
+    grid-column: span 2;
+    padding: 12px;
+    border: none;
+    background-color: #00c3ff;
+    color: white;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.formulario button:hover {
+    background-color: #0099cc;
+}
+
+/* Labels alineados */
+.formulario label {
+    grid-column: span 2;
+    text-align: left;
+    font-weight: bold;
+}
